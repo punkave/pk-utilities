@@ -4,7 +4,7 @@ import keys from './utils/keys';
 import methods from './utils/methods';
 import state from './utils/state';
 
-const pkutils = {
+const pkUtils = {
   classes,
   focusable,
   keys,
@@ -19,4 +19,4 @@ export {
   state
 };
 
-export { pkutils as default };
+export { pkUtils as default };
