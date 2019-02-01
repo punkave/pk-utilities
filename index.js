@@ -1,8 +1,8 @@
-import classes from './utils/classes';
-import focusable from './utils/focusable';
-import keys from './utils/keys';
-import methods from './utils/methods';
-import state from './utils/state';
+import classes from './lib/classes';
+import focusable from './lib/focusable';
+import keys from './lib/keys';
+import methods from './lib/methods';
+import state from './lib/state';
 
 const pkUtils = {
   classes,
