@@ -11,7 +11,6 @@ export default {
     }
   },
   removeClass (el, className) {
-    console.log(el);
     if (el.classList) {
       el.classList.remove(className);
     } else {
@@ -22,8 +21,8 @@ export default {
     if (el.classList) {
       el.classList.toggle(className);
     } else {
-      var classes = el.className.split(' ');
-      var existingIndex = classes.indexOf(className);
+      let classes = el.className.split(' ');
+      const existingIndex = classes.indexOf(className);
       if (existingIndex >= 0) {
         classes.splice(existingIndex, 1);
       } else {
@@ -42,7 +41,7 @@ export default {
         el.prototype.webkitMatchesSelector;
     }
     el.prototype.closest = function (s) {
-      var el = this;
+      let el = this;
       if (!document.documentElement.contains(el)) return null;
       do {
         if (el.matches(s)) {
