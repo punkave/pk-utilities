@@ -20,4 +20,27 @@ An object of helper functions.
 An object of javascript event key codes
 
 ### `state.js`
-Methods that handle toggling classes and aria for UI state.
+helpers that handle toggling classes and aria for UI state.
+
+
+### How To Use:
+
+
+Import entire module and call whatever utils:
+```
+import pkutils from 'pk-utilities';
+
+button.addEventListener('click', function () {
+  pkutils.helpers.toggleClass(this, pkutils.classes.active);
+});
+
+```
+Or import each util as needed:
+```
+import { helpers, classes } from 'pk-utilities';
+
+button.addEventListener('click', function () {
+  helpers.toggleClass(this, classes.active);
+});
+
+```
